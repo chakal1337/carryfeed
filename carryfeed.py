@@ -13,7 +13,7 @@ tlock = threading.Lock()
 context = ssl.create_default_context()
 
 payload = "%0d%0aSet-Cookie:%20Evil"
-identifier = "\r\nSet-Cookie: Evil"
+identifier = "Set-Cookie: Evil"
 
 def get_full_url(host,port,payload):
  scheme = "http"
